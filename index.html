@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Downloder</title>
+    <link rel="stylesheet" href="/">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div ng-app="fdApp">
+        <fd-main-page>
+            <!--<fd-select-all items="$ctrl.files" on-select-all="$ctrl.onSelectAllClick(isSelectAll)"></fd-select-all>
+          <fd-download-selected on-download="$ctrl.onDownloadSelectedClick(isResetSelections)"></fd-download-selected> -->
+            <fd-grid grid-config="$ctrl.gridConfig" items="$ctrl.gridData"
+                on-select-change="$ctrl.onSelectChange(isSelected)"></fd-grid>
+        </fd-main-page>
+    </div>
+
+    <script src="/lib/angular.min.js"></script>
+    <script src="src/fdApp.js"></script>
+</body>
+
+</html>
